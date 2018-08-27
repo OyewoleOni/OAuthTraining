@@ -26,5 +26,11 @@ namespace SocialNetwork.Web.Controllers
 
             return View();
         }
+
+        [Authorize]
+        public ActionResult Private()
+        {
+            return Content("OK !");
+        }
     }
 }
